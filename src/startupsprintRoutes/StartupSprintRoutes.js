@@ -1,14 +1,14 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import { ApplicationGeneration, CustomerDashBoard, CustomerHomePage, CustomerRegistration } from '../components/CustomerComponents'
-import HomePageComponent from '../components/HomePageComponent'
-import LoginComponent from '../components/LoginComponent'
+import EmiCalculator from '../components/EMICalculator';
+import VerifiedCustomerTable from '../components/ApplicationInformation/VerifiedCustomerTable';
 
 function StartupSprintRoutes() {
   return (
     <Routes>
-        <Route path='' element={<HomePageComponent/>}></Route>
-        <Route path='/login' element={<LoginComponent/>}></Route>
+        <Route path='/emi-calculator' element={<EmiCalculator/>}/>
+        <Route path='/verify' element={<VerifiedCustomerTable/>}/>
         <Route path='/customer' element={<CustomerDashBoard/>}>
             <Route path='' element={<CustomerHomePage/>}></Route>
             <Route path='register' element={<CustomerRegistration/>}></Route>
@@ -18,4 +18,4 @@ function StartupSprintRoutes() {
   )
 }
 
-export default StartupSprintRoutes
+export default StartupSprintRoutes;
