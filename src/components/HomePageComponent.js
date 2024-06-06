@@ -1,12 +1,12 @@
 import React from 'react'
-import HomePageNavbar from './HomePageNavbar'
+import HomepageNavbar from './HomePageNavbar'
 
 function HomePageComponent() {
   return (
-    <>
-        <HomePageNavbar/>
-        <div>HomePageComponent</div>
-    </>
+  <>
+  <HomepageNavbar/>
+  <h2>HomePageComponent</h2>
+  </>
   )
 }
 

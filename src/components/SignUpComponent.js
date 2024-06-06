@@ -1,13 +1,14 @@
 import React from 'react'
 import HomepageNavbar from './HomePageNavbar'
 
-function LoginComponent() {
+function SignUpComponent() {
   return (
     <>
     <HomepageNavbar/>
-    <h2>LoginComponent</h2>
+    <h2>SignUpComponent</h2>
     </>
+    
   )
 }
 
-export default LoginComponent
+export default SignUpComponent
