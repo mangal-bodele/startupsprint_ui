@@ -5,9 +5,10 @@ function HomePageComponent() {
   return (
     <>
         <HomePageNavbar/>
-        <div>HomePageComponent</div>
+        <h2>HomePageComponent</h2>
     </>
   )
 }
 
 export default HomePageComponent
+
